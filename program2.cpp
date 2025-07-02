@@ -3,18 +3,19 @@
 using namespace std;
 
 int main() {
-    int num;
+    int num, cnt = 0;
   
     cout << "Enter the number :" <<endl;
     cin >> num;
     int i = 1;
     cout << "output : ";
-    while(num){
+    while(cnt < num){
         if(i%2 != 0){
-            cout<<i;
-            if(i < num - 1)
+            cout<<i<< " ";
+            cnt++;
+            if(cnt < num){
                 cout << ", ";
-            num--;
+            }
         }
         i++;
     }    
