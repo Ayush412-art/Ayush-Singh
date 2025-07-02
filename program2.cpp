@@ -1,6 +1,5 @@
 // Online C++ compiler to run C++ program online
 #include <iostream>
-#include<vector>
 using namespace std;
 
 int main() {
@@ -8,20 +7,16 @@ int main() {
   
     cout << "Enter the number :" <<endl;
     cin >> num;
-    vector<int>ans;
     int i = 1;
+    cout << "output : ";
     while(num){
         if(i%2 != 0){
-            ans.push_back(i);
+            cout<<i;
+            if(i < num - 1)
+                cout << ", ";
             num--;
         }
         i++;
-    }
-    cout << "output : ";
-    for(auto x : ans){
-        cout << x << " ";
-    }
-  
-    
+    }    
    
 }
